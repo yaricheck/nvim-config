@@ -1,12 +1,15 @@
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.cmd("language en_US")
-vim.cmd("set clipboard+=unnamed")
-
 vim.g.mapleader = " "
 vim.g.background = "light"
+
+local opt = vim.opt
+
+opt.number = true
+opt.relativenumber = true
+opt.expandtab = true
+opt.tabstop = 2
+opt.softtabstop = 2
+opt.shiftwidth = 2
+opt.clipboard = "unnamed"
 
 vim.opt.swapfile = false
 
@@ -18,4 +21,4 @@ vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.wo.number = true
-require("config.lazy")
+
