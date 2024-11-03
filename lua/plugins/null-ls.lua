@@ -48,12 +48,12 @@ return {
 
     null_ls.setup({
       sources = {
-        
         require("none-ls.formatting.eslint").with(opts.eslint_formatting),
         require("none-ls.diagnostics.eslint").with(opts.eslint_diagnostics),
         null_ls.builtins.formatting.prettier.with(opts.prettier_formatting),
         null_ls.builtins.formatting.stylua.with(opts.stylua_formatting),
         require("none-ls.code_actions.eslint").with(opts.eslint_diagnostics),
+        null_ls.builtins.diagnostics.jsonlint,
       },
       on_attach = on_attach,
     })
