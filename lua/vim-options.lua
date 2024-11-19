@@ -20,5 +20,6 @@ vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
 vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+vim.cmd("highlight LineNr guibg=none guifg=#050505")
 vim.wo.number = true
 

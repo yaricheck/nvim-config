@@ -10,7 +10,7 @@ return {
 		vim.keymap.set("n", "<C-a>", function()
 			ui.nav_prev()
 		end)
-		vim.keymap.set("n", "<C-V>", function()
+		vim.keymap.set("n", "<C-d>", function()
 			ui.nav_next()
 		end)
 		vim.keymap.set("n", "<leader>p", ":Telescope harpoon marks<CR>")
