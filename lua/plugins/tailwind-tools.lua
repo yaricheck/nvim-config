@@ -9,7 +9,7 @@ return {
   },
   opts = {
     document_color = {
-      kind = "foreground",
+      kind = "inline",
       debounce = 500,
     },
   } -- your configuration
