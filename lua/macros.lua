@@ -1,4 +1,3 @@
 local map = vim.keymap.set
 
-vim.fn.setreg('p', 'dgn*PvB#')
-map("n", "<leader>qc", ":g//normal @p<CR>")
+map("n", "<leader>qc", ":g//normal dgn*PvB#<CR>")
